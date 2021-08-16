@@ -1,3 +1,4 @@
+//a, b, c, r1, r2, raizQ = número 1, 2 e 3, resultado 1 e 2, raiz quadrada
 #include <stdio.h>
 #include<math.h>
 

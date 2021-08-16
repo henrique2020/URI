@@ -1,3 +1,4 @@
+//a, b = número 1 e 2
 #include <stdio.h>
 
 int main() {
