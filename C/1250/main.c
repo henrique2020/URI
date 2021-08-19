@@ -19,7 +19,7 @@ int main() {
         scanf("%s", &pulo);
 
         for(i2 = 0; i2 < mov; i2++){
-            if((tiro[i2] <= 2 && pulo[i2] == 'S') || (tiro[i2] > 2 && pulo[i2] == 'J')){
+            if((tiro[i2] <= 2 && pulo[i2] == 'S') || (tiro[i2] >= 3 && pulo[i2] == 'J')){
                 ace++;
             }
         }
