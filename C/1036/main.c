@@ -6,7 +6,7 @@ int main() {
   double a, b, c, r1, r2;
   scanf("%lf %lf %lf", &a, &b, &c);
   double delta = b*b-4*a*c;
-  if(a == 0 && delta < 0){
+  if(a == 0 || delta < 0){
     printf("Impossivel calcular\n");
   }
   else{
