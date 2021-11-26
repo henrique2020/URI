@@ -1,30 +1,34 @@
 //rep, mov, ace = repetições, movimentos, vezes que ele é atingido
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-    int rep, mov, ace, i;
-    i = 0;
-    scanf("%d", &rep);
-    while(i < rep){
-        ace = 0;
-        int i2;
-        scanf("%d", &mov);
+  int rep, mov, ace, i;
+  scanf("%d", &rep);
 
-        int tiro[mov];
-        for(i2 = 0; i2 < mov; i2++){
-            scanf("%d", &tiro[i2]);
-        }
+  int arr[rep];
+  for(i = 0; i < rep; i++){
+    int i2;
+    scanf("%d", &mov);
 
-        char pulo[mov];
-        scanf("%s", &pulo);
-
-        for(i2 = 0; i2 < mov; i2++){
-            if((tiro[i2] <= 2 && pulo[i2] == 'S') || (tiro[i2] >= 3 && pulo[i2] == 'J')){
-                ace++;
-            }
-        }
-        printf("%d\n", ace);
-        i+= 1;
+    int tiro[mov+1];
+    for(i2 = 1; i2 < (mov+1); i2++){
+      scanf("%d", &tiro[i2]);
     }
-    return 0;
+
+    char pulo[mov];
+    scanf("%s", &pulo[0]);
+
+    ace = 0;
+    for(i2 = 0; i2 < mov; i2++){
+      if((tiro[i2+1] <= 2 && pulo[i2] == 'S') || (tiro[i2+1] > 2 && pulo[i2] == 'J')){
+        ace++;
+      }
+    }
+    arr[i] = ace;
+  }
+  for(i = 0; i < rep; i++){
+    printf("%d\n", arr[i]);
+  }
+  return 0;
 }

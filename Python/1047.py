@@ -1,4 +1,4 @@
-linha = input().split()
+linha = input().split(" ")
 hI, mI, hF, mF = linha
 hI = int(hI)
 mI = int(mI)
@@ -7,10 +7,13 @@ mF = int(mF)
 
 if hI < hF:
 	horas = hF - hI
-elif hI == hF:
-	horas = 24
+elif hI > hF:
+  	horas = 24 - (hI - hF)
 else:
-	horas = 24 - (hI - hF)
+	if mI < mF: 
+		horas = 0
+	else: 
+		horas = 24
 
 if mI < mF:
 	minutos = mF - mI
