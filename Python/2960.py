@@ -10,7 +10,7 @@ distintas = []
 
 rep = int(input())
 while (rep):
-    tamanho = input()
+    tamanho = int(input())
     nome_lista = ''
     while(tamanho):
         titulo = input().lower()
