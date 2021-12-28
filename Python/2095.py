@@ -1,25 +1,18 @@
-##Time limit exceded
-
 qtde = int(input())
-quadradonia = input().split()
-quadradonia.sort(key=int)
-quadradonia = list(map(int, quadradonia))
+quadradonia = list(map(int, input().split()))
+quadradonia.sort()
 
-noglonia = input().split()
-noglonia.sort(key=int)
-noglonia = list(map(int, noglonia))
+noglonia = list(map(int, input().split()))
+noglonia.sort()
 
-vit_nog = 0
+vit = 0
+exercitoN = 0
 for exercitoQ in quadradonia:
-    n_entrou = True
-    for exercitoN in noglonia:
-        if exercitoN > exercitoQ:
-            vit_nog += 1
-            noglonia.remove(exercitoN)
-            n_entrou = False
+    while(exercitoN < len(noglonia)):
+        if noglonia[exercitoN] > exercitoQ:
+            vit += 1
+            exercitoN += 1
             break
+        exercitoN += 1
     
-    if n_entrou:
-        noglonia.pop(0)
-
-print("%d" % vit_nog)
+print("%d" % vit)
