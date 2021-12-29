@@ -1,6 +1,4 @@
-distancia, gasolina= input().split()
-distancia = float(distancia)
-gasolina = float(gasolina)
-
+distancia = float(input())
+gasolina = float(input())
 media = distancia/gasolina;
 print("%.3f km/l" % media);
