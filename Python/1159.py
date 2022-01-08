@@ -18,4 +18,3 @@ while True:
         rep-=1
 
     print(soma)
-    rep-=1
