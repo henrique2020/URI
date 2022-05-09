@@ -11,4 +11,4 @@ if ope == 'S':
     print(round(soma, 1))
 
 else:
-    print(round((soma/30), 1)) #66 é o número de casas na área superior
+    print(round((soma/30), 1)) #30 é o número de casas na área superior
