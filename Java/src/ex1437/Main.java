@@ -1,18 +1,13 @@
 package ex1437;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		
-		File arquivo = new File("Entrada/1437");
-		//InputStreamReader ir = new InputStreamReader(System.in);
-		FileReader ir = new FileReader(arquivo);
+		InputStreamReader ir = new InputStreamReader(System.in);
 		BufferedReader in = new BufferedReader(ir);
 		String linha;
 		while(true){
