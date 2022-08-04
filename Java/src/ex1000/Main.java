@@ -1,3 +1,5 @@
+package ex1000;
+
 import java.io.IOException;
 public class Main {
  
