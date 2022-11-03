@@ -1,0 +1,10 @@
+pos = int(input())
+
+print("Top", end=" ")
+if pos == 1: print("1")
+elif pos <= 3: print("3")
+elif pos <= 5: print("5")
+elif pos <= 10: print("10")
+elif pos <= 25: print("25")
+elif pos <= 50: print("50")
+else: print("100")
