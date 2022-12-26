@@ -1,8 +1,6 @@
 while True:
-    try: copa = int(input())
+    try:
+        if int(input()) == 0: print('vai ter copa!')
+        else: print('vai ter duas!')
+        
     except: break
-    
-    if copa == 0:
-        print('vai ter copa!')
-    else:
-        print('vai ter duas!')
