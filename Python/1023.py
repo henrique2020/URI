@@ -1,4 +1,3 @@
-#Time Limit Exceded
 from math import floor, trunc
 
 cidade = 0
