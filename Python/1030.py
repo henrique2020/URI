@@ -1,19 +1,13 @@
-#Incompletop
 rep = int(input())
-for case in range(0,rep):
+for case in range(rep):
     pessoas, saltos = map(int, input().split())
+    pos = 0
     pList = []
-    for x in range(1, pessoas+1):
-        pList.append(x)
+    [pList.append(x) for x in range(1, pessoas+1)]
     
-    pos = saltos-1
-    print(pList, len(pList), pos)
     while(len(pList) > 1):
-        if len(pList)-1 > pos: pos+= saltos-1
-        if len(pList)-1 <= pos: pos = pos%len(pList)
-        
-        #print(pList[pos-1], len(pList), pos)
-        del (pList[pos-1])
+        pos += saltos - 1
+        while(pos >= len(pList)): pos -= len(pList)
+        del (pList[pos])
         
     print('Case {}: {}'.format(case+1, pList[0]))
-            
