@@ -33,3 +33,5 @@ while True:
     print(' '.join([f'{value}-{key}' for key, value in sorted(consumo_habitante.items())]))
     print(f'Consumo medio: {media:0.2f} m3.')
     print()
+
+    
