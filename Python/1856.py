@@ -16,3 +16,5 @@ for _ in range(rep):
         ini = dados[1]
         fim = dados[2]
         print('{:d}'.format(abs(inimigos.index(ini) - inimigos.index(fim))-1))
+
+        
