@@ -1,10 +1,11 @@
-rep = int(input())
-for _ in range(rep):
-    numero = sorted(list(input()))
-    if '0' in numero:
-        pos = numero.count('0')
-        numero[0] = numero[pos]
-        numero[pos] = '0'
-    #[print(n, end='') for n in numero]
-    #print()
-    print(''.join(numero))
+for _ in range(int(input())):
+    n_sorte = list(input().replace('\r', ''))
+    n_sorte.sort()
+    
+    pos = n_sorte.count('0')
+    if pos:
+        temp = n_sorte[pos]
+        n_sorte[0] = temp
+        n_sorte[pos] = '0'
+        
+    print(''.join(n_sorte))
