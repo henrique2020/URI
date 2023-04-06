@@ -1,4 +1,4 @@
-hile True:
+while True:
     try: coluna = input()
     except: break
 
