@@ -1,6 +1,5 @@
 face = ['F', 'A', 'C', 'E']
 ganhadores = 0
-
 frase = [face]
 for _ in range(int(input())):
     letras = input().split()
