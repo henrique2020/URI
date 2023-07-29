@@ -1,3 +1,1 @@
-for x in range(int(input())-1):
-    print('Ho', end=' ')
-print('Ho!')
+print(' '.join(['Ho']*int(input())), end='!\n')
