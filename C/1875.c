@@ -4,10 +4,10 @@
 int main(){
     int rep, gols;
     int r, g, b, maior_placar;
-    r =  g = b = maior_placar = 0;
     scanf("%d", &rep);
 
-    for(int i; i < rep; i++){
+    for(int i = 0; i < rep; i++){
+        r =  g = b = maior_placar = 0;
         scanf("%d", &gols);
 
         char t1, t2;
