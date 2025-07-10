@@ -1,0 +1,1 @@
+[print(' '.join(sorted(input().split(), key=lambda palavra: len(palavra), reverse=True))) for _ in range(int(input()))]
