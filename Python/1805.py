@@ -4,7 +4,7 @@ num = fim-ini
 soma = ini+fim
 if(num % 2 == 0):
     rep = num/2
-    result = soma*rep + fim-multi
+    result = soma*rep + fim-rep
 else:
     rep = (num+1)/2
     result = soma*rep
