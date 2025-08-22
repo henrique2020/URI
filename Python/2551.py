@@ -1,3 +1,6 @@
+#Problema: 2551 - Novo Recorde  | Resposta: Accepted
+#Linguagem: Python 3.11 [+1s]   | Tempo: 0.004s
+
 while True:
     try: treinos = int(input())
     except: break
