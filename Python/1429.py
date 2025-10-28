@@ -1,6 +1,5 @@
-
-// Problema: 1429 - Fatorial de Novo! | Resposta: Accepted
-// Linguagem: Python 3.11 [+1s]       | Tempo: 1.217s
+# Problema: 1429 - Fatorial de Novo! | Resposta: Accepted
+# Linguagem: Python 3.11 [+1s]       | Tempo: 1.217s
 
 MAX_DIGITS = 5
 
