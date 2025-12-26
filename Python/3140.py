@@ -1,5 +1,5 @@
 # Problema: 3140 - Copiando e Colando Código | Resposta: Accepted
-# Linguagem: Python 3.11 [+1s]               | Tempo: 0.558s
+# Linguagem: Python 3.11 [+1s]               | Tempo: 0.356s
 
 save = False
 while True:
@@ -7,7 +7,8 @@ while True:
         line = input()
         if "body>" in line: 
             save = not save
-            continue
+            if not save: break
+            else: continue
         if save: print(line)
     except EOFError:
         break
