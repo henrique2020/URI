@@ -1,5 +1,5 @@
-// Problema: 2756 - Saída 10 | Resposta: Accepted
-// Linguagem: Java 19 [+2s]  | Tempo: 0.034s
+// Problema: 2756 - Saída 10         | Resposta: Accepted
+// Linguagem: JavaScript 12.18 [+2s] | Tempo: 0.034s
 
 var letras = ['A', 'B', 'C', 'D', 'E'];
 var qtde = letras.length -1;
