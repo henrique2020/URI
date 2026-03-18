@@ -1,16 +1,12 @@
 # Problema: 1305 - Arredondamento por Valor de Corte | Resposta: Accepted
-# Linguagem: Python 3.11 [+1s]                       | Tempo: 0.218
+# Linguagem: Python 3.11 [+1s]                       | Tempo: 0.024s
 
 import sys
 
 linhas = sys.stdin.read().splitlines()
-while linhas:
-    num = float(linhas.pop(0))
-    cutoff = float(linhas.pop(0))
+for i in range(0, len(linhas), 2):
+    num = float(linhas[i])
+    cutoff = float(linhas[i + 1])
     
-    inteiro = int(num // 1)
-    decimal = num - inteiro
-    if decimal >= cutoff:
-        inteiro += 1
-        
-    print(inteiro)
+    result = int(num) + (1 if num % 1 >= cutoff else 0)
+    print(result)
