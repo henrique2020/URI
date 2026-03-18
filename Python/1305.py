@@ -1,5 +1,5 @@
 # Problema: 1305 - Arredondamento por Valor de Corte | Resposta: Accepted
-# Linguagem: Python 3.11 [+1s]                       | Tempo: 0.000s
+# Linguagem: Python 3.11 [+1s]                       | Tempo: 0.218
 
 import sys
 
